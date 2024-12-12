@@ -2,10 +2,6 @@ import { FaHeart, FaClinicMedical } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaPhoneFlip } from "react-icons/fa6";
 import { MdOutlineMailOutline, MdLocationPin } from "react-icons/md";
-import { BiLogoInstagramAlt } from "react-icons/bi";
-import { FaYoutube, FaFacebook } from "react-icons/fa";
-import { FaStarOfLife, FaMapMarkerAlt } from "react-icons/fa";
-import { IoSearch } from "react-icons/io5";
 import { FaCommentMedical, FaStethoscope, FaSmile, FaPercentage } from "react-icons/fa";
 import React from "react";
 import {
@@ -51,6 +47,7 @@ const Home = () => {
     return (
         <div>
             <div className="mx-8 sm:mx-16 mt-8">
+                {/*title */}
                 <div className="flex gap-10 flex-col lg:flex-row justify-between mb-14 bg-[#B1DDFF] xl:mx-28 px-6 md:px-14 rounded-3xl ">
                     <div className="my-10 lg:my-auto">
                         <div className="mb-3">
@@ -71,6 +68,8 @@ const Home = () => {
                         <img className="w-full md:w-max max-w-[400px] lg:max-w-[300px] xl:max-w-[400px]" src="https://impreza22.us-themes.com/wp-content/uploads/2021/12/doc-3.png" alt="" />
                     </div>
                 </div>
+                {/*title */}
+                {/*services */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div className="bg-[#f4faff] rounded-2xl px-10 py-10">
                         <div className="mb-4 flex gap-x-4">
@@ -113,6 +112,8 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                {/*services */}
+                {/*emergency */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 mt-28  mb-32">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
                         <div className="bg-[#f4faff] rounded-2xl pt-8 pb-12 ">
@@ -184,6 +185,8 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                {/*emergency */}
+                {/*detail */}
                 <div className="flex flex-col lg:grid grid-cols-1 lg:grid-cols-2 mb-10 md:mb-24 lg:mb-36">
                     <div className="lg:my-auto my-8 sm:mx-10 lg:mx-0 lg:mr-20">
                         <h3 className="text-[26px] font-bold mb-6 lg:mb-4">
@@ -202,8 +205,9 @@ const Home = () => {
                         <img style={{ boxShadow: "rgba(0, 0, 0, 0.15) 0px 5px 15px" }} className="rounded-2xl xl:h-[460px] w-full sm:w-[85%]" src="https://impreza22.us-themes.com/wp-content/uploads/2021/12/image.jpg" alt="home-img" />
                     </div>
                 </div>
+                {/*detail */}
 
-
+                {/*questions */}
                 <div className="lg:flex mb-24 mx-2">
                     <div className="ml-12 my-auto">
                         <h3 className="text-[24px] md:text-[28px] lg:mb-0 mb-6 font-bold min-w-[280px] md:min-w-[400px]">
@@ -246,6 +250,8 @@ const Home = () => {
                         </AccordionBody>
                     </Accordion>
                 </div>
+                {/*questions */}
+                {/*opinions */}
                 <div className="lg:flex mb-24 mx-2">
                     <div className="ml-12 my-auto">
                         <h3 className="text-[24px] md:text-[28px] lg:mb-0 mb-6 font-bold min-w-[280px] md:min-w-[400px]">
@@ -302,8 +308,8 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-
-
+                {/*opinions */}
+                {/*contact */}
                 <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 mb-24">
                     <div className="bg-[#f4faff] rounded-2xl px-14 py-14 -mx-3">
                         <div>
@@ -378,81 +384,9 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                {/*contact */}
             </div>
-            {/*footer */}
-            <div className="bg-[#203253] py-12">
-                <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center mb-8">
-                    <div className="mb-6 lg:mb-0">
-                        <Link
-                            to="/"
-                            className="mr-4 flex text-white hover:text-mainblue transition-colors font-bold duration-300 cursor-pointer py-1.5 text-[20px] my-auto"
-                        >
 
-                            Impreza Clinic
-                            <span className="my-auto mr-2">
-                                <FaStarOfLife />
-                            </span>
-                        </Link>
-                    </div>
-                    <div className="flex gap-8 mb-6 lg:mb-0">
-                        <div
-
-                            className="p-1 text-[15px]"
-                        >
-                            <Link to="/doctors" className="max-w-fit flex text-white items-center duration-300  hover:text-mainblue transition-colors">
-                                دکتر ها
-                            </Link>
-                        </div>
-                        <div
-                            className="p-1 text-[15px]"
-                        >
-                            <Link to="/services" className="max-w-fit flex text-white items-center duration-300  hover:text-mainblue transition-colors">
-                                خدمات
-                            </Link>
-                        </div>
-                        <div
-                            className="p-1 text-[15px]"
-                        >
-                            <Link to="/aboutus" className="max-w-fit flex text-white items-center duration-300  hover:text-mainblue transition-colors">
-                                درباره ما
-                            </Link>
-                        </div>
-                        <div
-                            className="p-1 text-[15px]"
-                        >
-                            <Link to="/support" className="max-w-fit flex text-white items-center duration-300  hover:text-mainblue transition-colors">
-                                پشتیبانی
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="flex gap-8">
-                        <div>
-                            <a href="#">
-                                <span className="text-white text-[20px]">
-                                    <BiLogoInstagramAlt />
-                                </span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <span className="text-white text-[20px]">
-                                    <FaYoutube />
-                                </span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <span className="text-white text-[18px]">
-                                    <FaFacebook />
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="text-center">
-                    <p className="text-[#ffffff]">Copyright © 2024 impreza clinic</p>
-                </div>
-            </div>
         </div>
     )
 }

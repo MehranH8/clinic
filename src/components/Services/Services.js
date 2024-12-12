@@ -1,7 +1,4 @@
-import { BiLogoInstagramAlt } from "react-icons/bi";
-import { FaYoutube, FaFacebook } from "react-icons/fa";
-import { FaStarOfLife } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
 import React,{useState} from "react";
 import {
     Tabs,
@@ -122,6 +119,7 @@ const Services = () => {
     return (
         <div className="mt-20">
             <div className="mx-16 xl:mx-24">
+                {/*title */}
                 <div className="lg:flex  mb-24 mx-2 ">
                     <div className="ml-16 my-auto">
                         <h3 className="text-[28px] lg:mb-0 mb-6 font-bold min-w-[200px]">
@@ -136,6 +134,8 @@ const Services = () => {
                         </p>
                     </div>
                 </div>
+                {/*title */}
+                {/*service cards */}
                 <div className="mb-24">
                     <Tabs value={activeTab} id="custom-animation" >
                         <TabsHeader className="bg-white mb-4 grid grid-cols-3 gap-y-4 lg:grid-cols-6" indicatorProps={{
@@ -163,81 +163,9 @@ const Services = () => {
                         </TabsBody>
                     </Tabs>
                 </div>
+                {/*service cards */}
             </div>
-            {/*footer */}
-            <div className="bg-[#203253] py-12">
-                <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center mb-8">
-                    <div className="mb-6 lg:mb-0">
-                        <Link
-                            to="/"
-                            className="mr-4 flex text-white hover:text-mainblue transition-colors font-bold duration-300 cursor-pointer py-1.5 text-[20px] my-auto"
-                        >
 
-                            Impreza Clinic
-                            <span className="my-auto mr-2">
-                                <FaStarOfLife />
-                            </span>
-                        </Link>
-                    </div>
-                    <div className="flex gap-8 mb-6 lg:mb-0">
-                        <div
-
-                            className="p-1 text-[15px]"
-                        >
-                            <Link to="/doctors" className="max-w-fit flex text-white items-center duration-300  hover:text-mainblue transition-colors">
-                                دکتر ها
-                            </Link>
-                        </div>
-                        <div
-                            className="p-1 text-[15px]"
-                        >
-                            <Link to="/services" className="max-w-fit flex text-white items-center duration-300  hover:text-mainblue transition-colors">
-                                خدمات
-                            </Link>
-                        </div>
-                        <div
-                            className="p-1 text-[15px]"
-                        >
-                            <Link to="/aboutus" className="max-w-fit flex text-white items-center duration-300  hover:text-mainblue transition-colors">
-                                درباره ما
-                            </Link>
-                        </div>
-                        <div
-                            className="p-1 text-[15px]"
-                        >
-                            <Link to="/support" className="max-w-fit flex text-white items-center duration-300  hover:text-mainblue transition-colors">
-                                پشتیبانی
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="flex gap-8">
-                        <div>
-                            <a href="#">
-                                <span className="text-white text-[20px]">
-                                    <BiLogoInstagramAlt />
-                                </span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <span className="text-white text-[20px]">
-                                    <FaYoutube />
-                                </span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <span className="text-white text-[18px]">
-                                    <FaFacebook />
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="text-center">
-                    <p className="text-[#ffffff]">Copyright © 2024 impreza clinic</p>
-                </div>
-            </div>
         </div>
     )
 }

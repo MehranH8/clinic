@@ -64,8 +64,8 @@ function NavbarSimple() {
     }, []);
 
     return (
-        <Navbar className={openNav ? "mx-auto w-full px-8 md:px-12 mt-1 py-3 shadow-2xl sm:shadow-none" : "mx-auto w-full px-8 md:px-12 mt-1 py-3 shadow-none"}>
-            <div style={{ direction: "ltr" }} className="flex items-center justify-between text-blue-gray-900">
+        <Navbar className={openNav ? "mx-auto w-full px-8 md:px-12  py-3 shadow-2xl sm:shadow-none sticky top-0 !bg-white" : "mx-auto w-full px-8 md:px-12  py-3 shadow-none sticky top-0 !bg-white"}>
+            <div style={{ direction: "ltr" }} className="flex items-center justify-between text-blue-gray-900 bg-white">
                 <Link
                     to="/"
                     className="mr-4 flex hover:text-mainblue transition-colors font-bold duration-300 cursor-pointer py-1.5 text-[16px] md:text-[20px] my-auto"

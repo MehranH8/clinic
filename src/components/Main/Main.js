@@ -5,6 +5,7 @@ import Support from "../Support/Support";
 import About from "../About/About";
 import Services from "../Services/Services";
 import Home from "../Home/Home";
+import Footer from "../Footer/Footer"
 
 
 const Main = () => {
@@ -18,6 +19,7 @@ const Main = () => {
                 <Route path="/aboutus" element={<About />} />
                 <Route path="/services" element={<Services />} />
             </Routes>
+            <Footer/>
         </div>
     )
 }
